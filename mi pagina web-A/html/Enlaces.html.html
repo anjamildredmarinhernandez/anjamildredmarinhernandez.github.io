@@ -1,0 +1,189 @@
+<!--
+Marin Hernandez Anja Mildred 
+Diseño de Interfaces Graficas de Usuario 
+202148955--> 
+
+<html>
+<head></head>
+    <title>Enlaces en HTML</title>
+    <style type="text/css">
+        *{padding: 0;
+        margin: 0;
+        box-sizing: border-box;}
+        
+        header,nav, main, footer{
+            width: 100%;
+            background-color: deeppink;
+            color: papayawhip;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        header{
+            height: auto;
+            
+        }
+        
+        nav{
+            height: auto;
+            
+            background-color: hotpink;
+        }
+        
+        main{
+            height: auto;
+            background-color: lightpink
+                ;
+        }
+        
+        main nav{
+            width: 40%;
+        }
+        
+        footer{
+            height: 40px;
+        }
+        
+        section{
+            width: 60%;
+            height: 400px;
+            background-color: linen;
+            color: cadetblue;
+            margin-bottom: 30px;
+            padding: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-y: auto;
+           
+        }
+        
+        h2{
+            margin-bottom: 20px;
+        }
+        
+        header h1, footer h6{ 
+        text-align: center;
+        }
+        
+        ul li{
+            width: 10%;
+            height: 30px;
+            background-color: lightpink;
+            color:blueviolet;
+            list-style-type: none;
+            display:inline-block;
+            text-align: center;
+            padding: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+        
+        ul{
+            text-align: center;
+        }
+        
+        a:{
+            text-decoration: none;
+        }
+        
+        a:link{
+            color: crimson;
+          
+        }
+        
+        a:visited{
+            color: crimson;
+            
+        }
+        
+        a:active{
+            
+        }
+        
+        a:hover{
+            color: cyan;
+        }
+        
+        nav ul li:hover{
+            
+            background-color: deeppink;
+            width: 12%;
+        }
+        
+        nav ul li a:hover{
+            color: lightblue;
+        }
+        
+        p{
+            margin-bottom: 20px;
+            text-align: justify;
+            
+        }
+    
+        main nav ul li{
+            width: 20%;
+        }
+        
+    </style>
+<body>
+    <header>
+         <div><a href="../html/Index.html"><img style="width: 32px" src="../images/casa.png"></a></div>
+        <h1>ENLACES EN HTML</h1>
+    </header>
+    <nav>
+         <ul>
+             <li><a href="formatos_texto.html">Formatos</a></li>
+             <li> <a href="mi%20lista.html">Listas</a></li>
+             <li> <a href="Enlaces.html.html">Enlaces</a></li>
+             <li> <a href="tablas.html">Tablas</a></li>
+             <li> <a href="imagenes.html">Imagenes</a></li>
+             <li> <a href="audios.html">Audio</a></li>
+             <li> <a href="videos.html">Video</a></li>
+             <li> <a href="formularios.html">Formularios</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <section>
+            <h2 id="externos">ENLACES EXTERNOS</h2>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex dolor, vehicula sed ipsum eget, viverra pulvinar est. Maecenas leo dolor, iaculis at ex eget, varius commodo mauris. Cras risus odio, tristique sed tellus eget, imperdiet commodo enim. Donec vitae nulla a dolor vehicula egestas. Maecenas lacus velit, molestie vel blandit non, mollis in lorem. Pellentesque ac tortor congue, vestibulum felis hendrerit, congue libero. Vestibulum blandit, risus a suscipit venenatis, metus nulla faucibus ipsum, eu tincidunt magna metus et metus. In dictum sapien vitae <a href="http://www.buap.mx"target="_blank">BENEMERITA UNIVERSIDAD AUTONOMA DE PUEBLA</a>varius fermentum. Ut condimentum nisl at leo porta aliquet. Ut pretium mattis molestie. Vivamus gravida ex.</P>
+         </section>
+            
+            
+            <section>
+                <h2 id="descarga">ENLACES DESCARGA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex dolor, vehicula sed ipsum eget, viverra pulvinar est. Maecenas leo dolor, iaculis at ex eget, <a href="../images/Marin%20Hernandez%20Anja-Formatos%20Texto.png" download>PREVISUZALIZACION DE PAGINA </a>varius commodo mauris. Cras risus odio, tristique sed tellus eget, imperdiet commodo enim. Donec vitae nulla a dolor vehicula egestas. Maecenas lacus velit, molestie vel blandit non, mollis in lorem.</p>
+            </section>
+            
+            <section>
+                <h2 id="internos">ENLACES INTERNO</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex dolor, vehicula sed ipsum eget, viverra pulvinar est. Maecenas leo dolor, iaculis at ex eget, varius commodo mauris. Cras risus odio, tristique sed tellus eget, imperdiet commodo enim. Donec vitae nulla a dolor vehicula egestas.<a href="../html/formatos_texto.html">FORMATOS DE TEXTO</a> Maecenas lacus velit, molestie vel blandit non, mollis in lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex dolor, vehicula sed ipsum eget, viverra pulvinar est. Maecenas leo dolor, iaculis at ex eget, varius commodo mauris. Cras risus odio Cras risus odio, tristique sed tellus eget, imperdiet commodo enim. Donec vitae nulla a dolor vehicula egestas. Maecenas lacus velit, molestie vel blandit non, mollis in lorem. Pellentesque ac tortor congue, vestibulum felis hendrerit, congue libero. Vestibulum blandit, risus a suscipit venenatis, metus nulla faucibus ipsum, eu tincidunt magna metus et metus. In dictum sapien vitae varius fermentum. Ut condimentum nisl at leo porta aliquet. Ut pretium mattis molestie. Vivamus gravida ex.</P>
+            </section>
+            
+             <section>
+                <h2 id="archivo">ENLACES A ARCHIVO </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex dolor, vehicula sed ipsum eget, <a href="../images/Marin%20Hernandez%20Anja%20-%20Enlaces%201.pdf" target="_blank">CODIGO DE PRACTICA FORMATOS DE TEXTO</a>viverra pulvinar est. Maecenas leo dolor, iaculis at ex eget, varius commodo mauris. Cras risus odio, tristique sed tellus eget, imperdiet commodo enim. Donec vitae nulla a dolor vehicula egestas. Maecenas lacus velit, molestie vel blandit non, mollis in lorem.vehicula sed ipsum eget, viverra pulvinar est. Maecenas leo dolor, iaculis at ex eget, varius commodo mauris. Cras risus odio, tristique sed tellus eget</p>
+            </section>
+        
+        <nav>
+            <ul>
+                <li> <a href="#externos">externos</a> </li>
+                <li><a href="#internos">internos</a> </li>
+                <li><a href=#archivo""> archivo</a> </li>
+                <li><a href="#descarga"> Descraga</a> </li>
+            </ul>
+        
+        </nav>
+            
+            
+            
+        
+    </main>
+    <footer>
+        <h6>Elaborado por Anja Mildred Marin Hernandez</h6>
+    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,524 @@
+    <head> 
+        <!--
+Marin Hernandez Anja Mildred 
+Diseño de Interfaces Graficas de Usuario 
+202148955--> 
+        <title>Tablas en html</title> 
+        <style type="text/css"> 
+            *{ 
+              padding: 0; 
+                margin: 0; 
+                box-sizing: border-box; 
+            } 
+            header, nav, main, footer{ 
+                width: 100%; 
+                padding: 30px; 
+                color:bisque; 
+            } 
+            header{ 
+                height: auto; 
+                background-color: chocolate; 
+            } 
+            nav{ 
+                height: auto; 
+                background-color:burlywood; 
+            } 
+            main{ 
+                height: auto; 
+                background-color: sandybrown; 
+            } 
+            footer{ 
+                height: 60px; 
+                background-color: saddlebrown; 
+            } 
+            section{ 
+                width: 70%;
+                 height: auto; 
+                background-color: bisque; 
+                margin-left: auto; 
+                margin-right: auto; 
+                margin-bottom: 30px; 
+                color: brown; 
+                padding: 30px; 
+            } 
+            h2{ 
+                margin-bottom: 20px; 
+            } 
+            header, footer{ 
+                text-align: center; 
+            } 
+            nav ul{ 
+                text-align: center; 
+            } 
+            nav ul li{ 
+                width: 10%; 
+                background-color: sandybrown; 
+                margin-left: 10px; 
+                margin-right: 10px; 
+                margin-bottom: 10px; 
+                list-style-type: none; 
+                padding: 10px; 
+                display: inline-block; 
+            } 
+            nav ul li a{ 
+                text-decoration: none; 
+            } 
+            p{ 
+                margin-bottom: 30px; 
+            } 
+            table{ 
+                background-color: aquamarine; 
+            } 
+            #tab_buap{ 
+                width: 80%; 
+                margin-left: auto; 
+                margin-right: auto; 
+                border-spacing: 10px; 
+                border-collapse:collapse; 
+                 } 
+            #tab_buap th{ 
+                background-color: royalblue; 
+                color: aliceblue; 
+                height: 50px; 
+            } 
+            #tab_buap td{ 
+                background-color: aliceblue; 
+                color: midnightblue; 
+                height: 30px; 
+                padding: 10px; 
+            } 
+            #tab_buap th, #tab_buap td{ 
+                border-width: 3px; 
+                border-color: lightsteelblue; 
+                border-style: solid; 
+            } 
+            #tab_libros{ 
+                width: 70%; 
+                margin-left: auto; 
+                margin-right:auto; 
+                border-collapse: collapse; 
+                 
+            } 
+            #tab_libros th{ 
+                height: 50px; 
+                background-color: saddlebrown; 
+                color: bisque; 
+                 
+            } 
+            #tab_libros tbody tr:nth-child(even){ 
+                background-color: sandybrown; 
+                color:saddlebrown; 
+            } 
+            #tab_libros tbody tr:nth-child(odd){ 
+                background-color: bisque; 
+                color:saddlebrown; 
+            } 
+            #tab_libros tfoot tr{ 
+                background-color: brown; 
+                color: bisque; 
+            }
+            #tab_libros td{ 
+                height: 30px; 
+                padding: 20px; 
+            } 
+            #tab_pelis{ 
+                width: 80%; 
+                margin-left: auto; 
+                margin-right: auto; 
+                /* 
+                esta propiedad separa las celdas de la 
+tabla 
+                border-spacing: 10px;*/ 
+                border-collapse: collapse; 
+                background-color: burlywood; 
+                 
+            } 
+            #tab_pelis th{ 
+                background-color: saddlebrown; 
+                color: bisque; 
+                height: 50px; 
+                padding: 10px; 
+            } 
+            #tab_pelis, #tab_pelis th, #tab_pelis td{ 
+                border-width: 3px; 
+                border-style: solid; 
+                border-color: rosybrown; 
+            } 
+            #tab_pelis td{ 
+                height: 30px; 
+                padding: 20px; 
+            } 
+            /*#tab_pelis tbody tr:hover{ 
+                background-color: yellow; 
+            }*/ 
+            #tab_pelis tbody tr td:hover{ 
+                background-color: yellow; 
+            } 
+            #tab_series{ 
+                width: 1500px; 
+                border-collapse: collapse; 
+                background-color:burlywood; 
+                 } 
+            #tab_series th, #tab_series td{ 
+                border:3px solid brown; 
+                padding: 10px; 
+            } 
+            #tab_series th{ 
+                background-color: darkgoldenrod; 
+                color: bisque; 
+            } 
+        </style> 
+    </head> 
+    <body> 
+        <header> 
+             <div><a href="../html/Index.html"><img style="width: 32px" src="../images/casa.png"></a></div>
+            <h1>TABLAS</h1> 
+        </header> 
+        <nav> 
+            <ul> 
+            <li><a 
+href="formatos_texto.html">Formatos</a> 
+            
+            <li><a href="mi%20lista.html">Listas</a> 
+            <li><a href="Enlaces.html.html">Enlaces</a> 
+            <li><a href="tablas.html">Tablas</a> 
+            <li><a href="imagenes.html">Imagenes</a> 
+            <li><a href="audios.html">Audio</a> 
+            <li><a href="videos.html">Video</a> 
+            <li><a href="formularios.html">Formularios</a> 
+            </ul> 
+        </nav> 
+        <main> 
+            <section style="overflow-x: auto"> 
+                <h2>Tabla simple</h2> 
+                <p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. Aliquam gravida, diam ut 
+aliquet congue, ante ipsum imperdiet velit, vitae 
+ornare lacus nisl lobortis augue. Praesent lobortis 
+pulvinar aliquet. Curabitur nec sollicitudin lectus. 
+Sed consequat semper ligula. Aenean id ligula in dui 
+maximus lobortis vitae vel velit. Cras euismod gravida 
+turpis eu laoreet. Nulla vel elit et eros congue 
+lacinia aliquam id lacus. Integer iaculis fermentum ex 
+laoreet accumsan. Integer sapien augue, faucibus sed volutpat in, eleifend et tortor.
+Quisque fermentum vel 
+justo ac euismod. Donec ullamcorper pellentesque arcu, 
+ac pellentesque erat consequat id. Nulla porta enim ac 
+nisi feugiat aliquam.</p> 
+                <table id="tab_buap" border="1"> 
+                    <thead> 
+                        <tr> 
+                            <th>Matricula</th> 
+                            <th>Nombre</th> 
+                            <th>Facultad</th> 
+                            <th>Telefono</th> 
+                            <th>Email</th> 
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td>202014520</td> 
+                            <td>Jose Alvarez</td> 
+                            <td>Arquitectura</td> 
+                            <td>2221589963</td> 
+                            <td>jose.alv@gmail.com</td> 
+                        </tr> 
+                        <tr> 
+                            <td>20217856</td> 
+                            <td>Maria Jose</td> 
+                            <td>Contaduria</td> 
+                            <td>2222211225</td> 
+                            <td>mari.roja@gmail.com</
+ td> 
+                        </tr> 
+                        <tr> 
+                            <td>202083695</td> 
+                            <td>Cesar Hernandez</td> 
+                            <td>Medicina</td> 
+                            <td>2225478500</td> 
+                            <td>cear.hern@gmail.com</
+ td> 
+                        </tr> 
+                        <tr> 
+                            <td>202156937</td> 
+                            <td>Diego Fernandez</td> 
+                            <td>Veterinaria</td>
+                             <td>5552326874</td> 
+<td>diego.fernandez@gmail.com</td> 
+                        </tr> 
+                        <tr> 
+                            <td>202455896</td> 
+                            <td>Daniela Hernandez</td> 
+                            <td>Ingenieria Quimica</td> 
+                            <td>3266958574</td> 
+<td>dani.hernandez@gmail.com</td> 
+                        </tr> 
+                        <tr> 
+                            <td>202355896</td> 
+                            <td>Armando Hoyos</td> 
+                            <td>Cultura Fisica</td> 
+                            <td>202058112</td> 
+<td>armando.hoyos@gmail.com</td> 
+                        </tr> 
+                    </tbody> 
+                    <tfooter> 
+                    </tfooter> 
+                </table> 
+            </section> 
+            <section style="overflow-x: auto"> 
+                <h2>Tabla cebra</h2> 
+                <p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. Aliquam gravida, diam ut 
+aliquet congue, ante ipsum imperdiet velit, vitae 
+ornare lacus nisl lobortis augue. Praesent lobortis 
+pulvinar aliquet. Curabitur nec sollicitudin lectus. 
+Sed consequat semper ligula. Aenean id ligula in dui 
+maximus lobortis vitae vel velit. Cras euismod gravida 
+turpis eu laoreet. Nulla vel elit et eros congue 
+lacinia aliquam id lacus. Integer iaculis fermentum ex 
+laoreet accumsan. Integer sapien augue, faucibus sed 
+volutpat in, eleifend et tortor. Quisque fermentum vel 
+justo ac euismod. Donec ullamcorper pellentesque arcu, 
+ac pellentesque erat consequat id. Nulla porta enim ac 
+nisi feugiat aliquam.</p> 
+                 <table id="tab_libros" border="1"> 
+                <thead> 
+                    <tr> 
+                        <th>Titulo</th> 
+                        <th>Autor</th> 
+                        <th>Editorial</th> 
+                        <th>Ano</th> 
+                        <th>Precio</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Cronica de una muerte 
+anunciada</td> 
+                        <td>Anonimo</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>250.00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Momo</td> 
+                        <td>Michael Ende</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>180.00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Divergente</td> 
+                        <td>Veronica Rod</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>220.00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>El diaro de Gray</td> 
+                        <td>Jeff Kiney</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>350.00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Entre las armas y la palabra</td> 
+                        <td>Maria Sanz</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>280.00</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Alicia en el pais de las maravillas</td> 
+            </section> 
+                        <td>Lewis Carroll</td> 
+                        <td></td> 
+                        <td></td> 
+                        <td>245.00</td> 
+                    </tr> 
+                </tbody> 
+                <tfoot> 
+                   <tr> 
+                        <td></td> 
+                       <td></td> 
+                       <td></td> 
+                       <td>Total</td> 
+                       <td>1525.00</td> 
+                    </tr> 
+                </tfoot> 
+                </table> 
+            <section style="overflow-x: auto"> 
+            <h2>Tabla hover</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Aliquam gravida, diam ut aliquet 
+congue, ante ipsum imperdiet velit, vitae ornare lacus 
+nisl lobortis augue. Praesent lobortis pulvinar 
+aliquet. Curabitur nec sollicitudin lectus. Sed 
+consequat semper ligula. Aenean id ligula in dui 
+maximus lobortis vitae vel velit. Cras euismod gravida 
+turpis eu laoreet. Nulla vel elit et eros congue 
+lacinia aliquam id lacus. Integer iaculis fermentum ex 
+laoreet accumsan. Integer sapien augue, faucibus sed 
+volutpat in, eleifend et tortor. Quisque fermentum vel 
+justo ac euismod. Donec ullamcorper pellentesque arcu, 
+ac pellentesque erat consequat id. Nulla porta enim ac nisi feugiat aliquam.</p> 
+            <table id="tab_pelis" border="1"> 
+                <thead> 
+                    <tr> 
+                        <th>Titulo</th> 
+                        <th>Director</th> 
+                        <th>Genero</th> 
+                        <th>Ano</th> 
+                        <th>Total de secuelas</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Hangover</td> 
+                        <td>Todd Phillips</td> 
+                        <td>Comedia</td> 
+                        <td>2009</td> 
+                        <td>2</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Gol</td> 
+                        <td>Danny Cannon</td> 
+                        <td>Deportes</td> 
+                        <td>2006</td> 
+                        <td>0</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Avengers</td> 
+                        <td>Joss Whedon</td> 
+                        <td>Ciencia ficcion</td> 
+                        <td>2012</td> 
+                        <td>3</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Divergente</td> 
+                        <td>Neil Burger</td> 
+                        <td>Ciencia ficcion</td> 
+                        <td>2014</td> 
+                        <td>2</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Gladiador</td>
+                         <td>Ridley Scott</td> 
+                        <td>Accion</td> 
+                        <td>2000</td> 
+                        <td>1</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Rapido y furioso</td> 
+                        <td>Justin Lin</td> 
+                        <td>Accion</td> 
+                        <td>2001</td> 
+                        <td>10</td> 
+                    </tr> 
+                </tbody> 
+                <tfoot> 
+                </tfoot> 
+                </table> 
+            </section> 
+            <section style="overflow-x: auto"> 
+            <h2>Tabla overflow-x</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Aliquam gravida, diam ut aliquet 
+congue, ante ipsum imperdiet velit, vitae ornare lacus 
+nisl lobortis augue. Praesent lobortis pulvinar 
+aliquet. Curabitur nec sollicitudin lectus. Sed 
+consequat semper ligula. Aenean id ligula in dui 
+maximus lobortis vitae vel velit. Cras euismod gravida 
+turpis eu laoreet. Nulla vel elit et eros congue 
+lacinia aliquam id lacus. Integer iaculis fermentum ex 
+laoreet accumsan. Integer sapien augue, faucibus sed 
+volutpat in, eleifend et tortor. Quisque fermentum vel 
+justo ac euismod. Donec ullamcorper pellentesque arcu, 
+ac pellentesque erat consequat id. Nulla porta enim ac 
+nisi feugiat aliquam.</p> 
+            <table id="tab_series" border="1"> 
+                <thead> 
+                    <tr> 
+                        <th>Serie</th> 
+                        <th>Ano</th> 
+                        <th>Genero</th> 
+                        <th colspan="2">Creador</th> 
+                        <th colspan="2">Pais</th> 
+                          <th>Temporadas</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>House of cards</td> 
+                        <td>2013</td> 
+                        <td>Policial</td> 
+                        <td>Beau Willimon</td> 
+                        <td></td> 
+                        <td>Estados Unidos</td> 
+                        <td></td> 
+                        <td>6</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Hora de aventura</td> 
+                        <td>2018</td> 
+                        <td>Fantasia</td> 
+                        <td>Pendleton Ward</td> 
+                        <td></td> 
+                        <td>Estados Unidos</td> 
+                        <td>Suecia</td> 
+                        <td>10</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Dr. House</td> 
+                        <td>2004</td> 
+                        <td>Drama medico</td> 
+                        <td>David Shore</td> 
+                        <td></td> 
+                        <td>Estados Unidos</td> 
+                        <td></td> 
+                        <td>8</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Belleza verdadera</td> 
+                        <td>2020</td> 
+                        <td>Romance</td> 
+                        <td>Kim Sang-hyup</td> 
+                        <td></td> 
+                        <td>Corea del sur</td> 
+                        <td></td> 
+                         <td>1</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Shogun</td> 
+                        <td>2024</td> 
+                        <td>Drama historico</td> 
+                        <td>Rachel Kondo</td> 
+                        <td>Justin Marks</td> 
+                        <td>Japon</td> 
+                        <td></td> 
+                        <td>1</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Club de cuervos</td> 
+                        <td>2015</td> 
+                        <td>Comedia dramatica</td> 
+                        <td>Gaz Alazarak</td> 
+                        <td>Micahel Lam</td> 
+                        <td>Mexico</td> 
+                        <td></td> 
+                        <td>4</td> 
+                    </tr> 
+                </tbody> 
+                <tfoot> 
+                     
+                </tfoot> 
+                </table> 
+            </section> 
+        </main> 
+        <footer> 
+            <h6>Elaborado por Anja Mildred Marin Hernandez
+</h6> 
+        </footer> 
+    </body> 
+ 
+</html>

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rubik+Mono+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer{
+    width: 100%;
+    padding: 30px;
+    background-color: #FFEFC8;
+    
+ 
+}
+header, footer{
+    text-align: center;
+    font-size: 48px;
+}
+
+header h1{
+    color: #D70654;
+     font-family: "Rubik Mono One", serif;
+    
+}
+
+nav{
+    
+    background-color:#FFD95F;
+    height: auto;
+}
+
+nav ul{
+    text-align: center;
+    
+}
+
+nav ul li{
+    width: 11%;
+    height: 45px;
+    background-color: #D70654;
+    display: inline-block;
+    margin-left: ;
+    margin-right: px;
+   font-size:25px;
+    min-width: 100px;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+            
+            background-color:#B8D576;
+            width: 12%;
+        }
+        
+        nav ul li a:hover{
+            color: #D70654;
+        }
+
+main{
+    height: auto;
+    background-color: #B8D576;
+    color: #D70654;
+    padding: 10px;
+}
+
+footer{
+    font-size: 24px;
+    color: #D70654;
+}
+section{
+    width: 70%;
+    height: auto;
+    background-color: #FFD95F;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: #D70654;
+}
+
+p{
+    margin-top: 20px;
+    
+}
+
+h2{
+    color: #D70654;
+}
+
+
+img{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #FFD95F;
+}
+
+
+#img_gift{
+    width: 40%;
+    border-radius: 30%
+}
+
+.img_float{
+    width: 20%;
+    min-width: 10%;
+    
+}
+
+#img_izq{
+    float: left;
+    margin: 0px;
+    margin-right: 20px;
+}
+
+#img_der{float: right;
+ margin: 0px;
+   
+}
+
+
+#img_ico{
+    width: 64px;
+    height: auto;
+    margin-right: 0;
+}
+
+
+#fondo{
+    height: 250px;
+    background-image: url("../images/flores.jpg");
+    background-size: cover}
+
+
+video, iframe{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+    
+}
+.box_videos {
+    text-align: center;
+    
+}
+.box_videos section{
+    
+    width: 40%;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    min-width: 360px;
+    height: 500px;
+    overflow-y: auto;
+   
+}
+
+.box_videos section p {
+    text-align: justify;
+}
+    
+
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
